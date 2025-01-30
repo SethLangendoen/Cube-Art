@@ -11,6 +11,8 @@ import assemble from '../Assets/images/assemble.png';
 import showOff from '../Assets/images/showOff.png';
 import BgCube from "./BgCube";
 
+import Summary from "./Summary.js";
+
 
 const CUBE_COLORS = {
   white: [255, 255, 255],
@@ -190,7 +192,7 @@ const ImageProcessor = () => {
 
 
   return (
-    <div>
+    <div >
       <h1 className="random-fall-text">Rubik's Cube Art</h1>
 
 		<div>
@@ -199,7 +201,7 @@ const ImageProcessor = () => {
 			</div>
 			<div className="desc-1">
 				<div data-aos="fade-right" data-aos-offset="500">
-					<h2>Choose One Unique Design</h2>
+					<h2>Choose a Unique Design</h2>
 					<img src = {mario} alt='Rubiks Cube Mosaic Mario'/>
 				</div>
 			</div>
@@ -290,6 +292,20 @@ const ImageProcessor = () => {
 		</div>
 
 	</div>
+
+	<div>
+		{mosaicData.length > 0 && (
+		<Summary totalCubes={totalCubes} mosaicData={mosaicData}/>
+		)}
+	</div>
+
+	<div id='support'>
+		<p>If you enjoyed this free tool and would like to support the me, consider donating so I can continue to make cool free tools like this one!</p>
+		<a href="https://buymeacoffee.com/sethlangendoen" target="_blank" rel="noopener noreferrer">
+		<button id="support-button">Donate</button>
+		</a>
+	</div>
+
 
 
 

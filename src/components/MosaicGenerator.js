@@ -58,7 +58,7 @@ const MosaicGenerator = ({ mosaicData, onCubeSelect }) => {
   }, [selectedIndex, cubesData, onCubeSelect]);
 
   return (
-    <div className="mosaic-container">
+    <div className="mosaic-container" id='mosaic-cont'>
       {cubesData.map((rowCubes, rowIndex) => (
         <div key={rowIndex} className="mosaic-row">
           {rowCubes.map(({ cubeColors, index }) => (

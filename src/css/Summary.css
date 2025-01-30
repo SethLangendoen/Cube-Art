@@ -1,0 +1,88 @@
+/* Summary container */
+.summary-container {
+	margin: 2rem auto;
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 800px;
+	width: 100%;
+  }
+  
+  .summary-container h3 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+  }
+  
+  .summary-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 1.5rem;
+  }
+  
+  .summary-item label {
+	font-weight: 600;
+	color: #444;
+	flex: 1;
+  }
+  
+  .summary-item input {
+	width: 150px;
+	font-size: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-right: 1rem;
+	margin-left: 1rem;
+  }
+  
+  .summary-item .calculated-value {
+	font-weight: bold;
+	color: #333;
+	flex-shrink: 0;
+	text-align: right;
+  }
+  
+  .summary-item input:focus {
+	outline: none;
+	border-color: #007bff;
+  }
+  
+  .summary-item input[type="number"] {
+	/* -moz-appearance: textfield; */
+  }
+  
+  .summary-item strong {
+	margin-right: 10px; 
+  }
+ 
+  /* Additional spacing adjustments for better layout */
+  .summary-item:last-child {
+	margin-bottom: 0;
+  }
+  
+  @media (max-width: 968px) {
+	.summary-container {
+	  padding: 1rem;
+	  width: 500px;
+	}
+  
+
+  }
+
+  @media (max-width: 568px) {
+	.summary-container {
+	  padding: 0rem;
+	  width: 300px;
+	}
+
+
+  }
+  
+  

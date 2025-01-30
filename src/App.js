@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
 import ImageProcessor from "./components/ImageProcessor";
 import CubeFall from "./components/CubeFall";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import Navbar from "./components/Navbar";
 
 
 const App = () => {
@@ -18,9 +21,18 @@ const App = () => {
 
   return (
     <div>
-      <ImageProcessor />
-
+      <Navbar /> 
       <CubeFall />
+
+      <Routes>
+      <Route path="/" element={
+          <>
+            <ImageProcessor />
+
+          </>
+        } />
+      </Routes>
+
     </div>
   );
 };
