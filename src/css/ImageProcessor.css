@@ -1,0 +1,251 @@
+@keyframes random-fall {
+	0% { transform: translateY(-300px); opacity: 0; }
+	100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .random-fall-text {
+	display: flex;
+	font-size: 120px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 2px;
+	position: relative;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	margin: 300px; 
+	margin-bottom: 0px;
+  }
+  
+  .random-fall-text span {
+	display: inline-block;
+	opacity: 0;
+	animation: random-fall .2s ease-out forwards;
+	visibility: hidden; /* Keeps the text hidden until animation starts */
+  }
+  
+  .random-fall-text span.revealed {
+	visibility: visible; /* Makes text visible when it falls into place */
+  }
+  
+  .random-fall-text span.space {
+	visibility: visible; /* Spaces are always visible */
+	display: inline-block;
+  }
+
+
+  .slogan {
+	margin: 0px; 
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	margin-bottom: 200px; 
+  }
+
+
+  .desc-1 {
+	padding: 150px; 
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	display: flex;
+	align-items: center; 
+	justify-content: flex-start;
+  }
+
+  .desc-1 > div {
+	width: 40%;
+	padding: 20px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+	background-color: rgb(242, 255, 0);
+	border-radius: 20px;
+  }
+
+  .desc-1 > div > img {
+	box-sizing: border-box;
+	width: 100%; 
+	height: auto;
+	border-radius: 10px;
+  }
+
+
+  .desc-2 {
+	padding: 150px; 
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	display: flex;
+	align-items: center; 
+	justify-content: flex-end;
+  }
+
+  .desc-2 > div {
+	width: 40%;
+	padding: 20px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+	background-color: rgb(0, 81, 255);
+	border-radius: 20px;
+  }
+
+  .desc-2 > div > img {
+	box-sizing: border-box;
+	width: 100%; 
+	height: auto;
+	border-radius: 10px;
+  }
+
+
+  .desc-3 {
+	padding: 150px; 
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	display: flex;
+	align-items: center; 
+	justify-content: flex-start;
+  }
+
+  .desc-3 > div {
+	width: 40%;
+	padding: 20px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+	background-color: rgb(0, 255, 55);
+	border-radius: 20px;
+  }
+
+  .desc-3 > div > img {
+	box-sizing: border-box;
+	width: 100%; 
+	height: auto;
+	border-radius: 10px;
+  }
+
+  .desc-4 {
+	padding: 150px; 
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	display: flex;
+	align-items: center; 
+	justify-content: flex-end;
+  }
+
+  .desc-4 > div {
+	width: 40%;
+	padding: 20px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+	background-color: rgb(255, 149, 0);
+	border-radius: 20px;
+  }
+
+  .desc-4 > div > img {
+	box-sizing: border-box;
+	width: 100%; 
+	max-height: 500px;
+	height: auto;
+	border-radius: 10px;
+  }
+
+  #mosaic {
+	margin: auto;
+  }
+
+  /* mosaic controls */
+  #mosaic-controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px; /* Adds space between each control element */
+	padding: 20px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	max-width: 300px; /* Limits the width of the control panel */
+	min-width: 300px; 
+	position: sticky;
+	top: 0px; 
+	left: 0px;
+	z-index: 100; 
+	
+  }
+  
+  #mosaic-controls > div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+  }
+  
+  #mosaic-controls input[type="file"] {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	width: 100%; 
+	max-width: 100%; 
+	box-sizing: border-box;
+  }
+  
+  #mosaic-controls input[type="number"] {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 100%;
+  }
+  
+  #mosaic-controls label {
+	font-size: 16px;
+	margin-bottom: 8px;
+	color: #333;
+  }
+  
+  #mosaic-controls input[type="radio"] {
+	margin-right: 8px;
+  }
+  
+  #mosaic-controls canvas {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  
+  #mosaic-display {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 100px;
+	margin-top: 50px; 
+	background-color: rgb(0, 221, 255);
+	padding: 20px;
+	overflow-x: scroll;
+  }
+
+  #png-download {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 100%;
+  }
+
+  #png-download:hover {
+
+	background-color: rgb(230,230,230);
+
+  }

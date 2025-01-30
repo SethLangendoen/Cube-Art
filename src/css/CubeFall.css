@@ -1,0 +1,36 @@
+.cube-fall-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400%;
+	overflow: hidden;
+	pointer-events: none; /* Prevent the cubes from blocking clicks */
+	z-index: -20;
+  }
+  
+  .falling-cube {
+	position: absolute;
+	top: -100px; /* Start above the screen */
+	animation: fall 5s linear infinite; /* Default fall animation */
+	pointer-events: none; /* Prevent the cubes from blocking clicks */
+
+  }
+
+
+  
+  @keyframes fall {
+	0% {
+	  top: -100px; /* Start position */
+	  opacity: 1;
+	}
+	90% {
+	  top: 300vh; /* End position (fall to the bottom of the screen) */
+	  opacity: 1;
+	}
+	100% {
+		top: 350vh; /* End position (fall to the bottom of the screen) */
+		opacity: 0;
+	  }
+  }
+  
